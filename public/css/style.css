@@ -1,0 +1,240 @@
+@font-face {
+  font-family: FjallaOne;
+  src: url('../fonts/FjallaOne-Regular.ttf');
+}
+html,body {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: FjallaOne;
+  color: #16264c;
+  overflow: hidden;
+}
+body {
+  background-color: #fff;
+}
+div.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 1.5rem);
+  height: calc(100% - 1.5rem);
+  margin: 0.5rem;
+  border: 0.25rem solid #E0B278;
+  background: url('../images/top.png'), url('../images/left.png'), url('../images/bottom.png'), url('../images/right.png'), url('../images/main-portrait.png'), url('../images/knot.png'), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAAXNSR0IArs4c6QAAAEZJREFUKFOFz8EJADAIA8BmBcH9BxRcweLDIlVb30disD6nqoaXcUBEGFEAD2lRBi26QUEiYsyMMSlADCk/dRWOz7oJ5MQNKMkznMfr4eQAAAAASUVORK5CYII=) #ffffff;
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y, no-repeat, no-repeat, repeat;
+  background-attachment: fixed, fixed, fixed, fixed, fixed, fixed, fixed;
+}
+h1,h2,h3,h4,h5 {
+  font-weight: normal;
+}
+h1.title {
+  position: absolute;
+  width: 100%;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h2.date {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h3.save,h3.location,h3.invite {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+img.hands {
+  position: absolute;
+}
+div.top {
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+  background: url('../images/top.png');
+  background-repeat: repeat-x;
+  background-position: center bottom;
+}
+a.venue,a.venue:hover,a.venue:active {
+  position: absolute;
+  text-decoration: none;
+  color: #16264c;
+  display: block;
+  padding: 1rem 2rem 1rem 2rem;
+  border: 2px solid #16264c;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(1px);
+}
+a.venue:hover {
+  font-weight: bold;
+}
+
+nav.top-nav {
+  position: absolute;
+  text-transform: uppercase;
+}
+
+div.content {
+  position: absolute;
+  margin: 0 1.5rem 0 1.5rem;
+  padding: 0;
+}
+div.content>h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 2rem 0 0.5rem 0;
+}
+div.content>h5 {
+  text-align: left;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+}
+@media screen and (min-width: 600px) {
+  div.container {
+    background-position: 0 0.75rem, 0.75rem 0, 0 calc(100% - 0.75rem), calc(100% - 0.75rem) 0, calc(100% - 1.75rem) calc(100% - 0.75rem), -1.5rem -1.5rem, center;
+    background-size: 10rem, 1.5rem, 10rem, 1.5rem, 30%, 12rem, auto;
+  }
+  h3.save {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    top: 6rem;
+  }
+  h1.title {
+    font-size: 4rem;
+    top: 9rem;
+  }
+  h3.invite {
+    font-size: 1rem;
+    top: 14rem;
+  }
+  h2.date {
+    font-size: 1.5rem;
+    top: 20rem;
+  }
+  h3.location {
+    text-transform: uppercase;
+    font-size: 1rem;
+    top: 22.5rem;
+  }
+  img.hands {
+    top: 15rem;
+    left: calc(50% - 3.5rem);
+    height: 5rem;
+  }
+  a.venue {
+    top: 25rem;
+    left: calc(50% - 4.5rem);
+    font-size: 1rem;
+  }
+  nav.top-nav {
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  nav.top-nav>a.open {
+    display: none;
+  }
+  nav.top-nav>a,nav.top-nav>a:hover,nav.top-nav>a:active {
+    text-decoration: none;
+    color: #e0b278;
+    display: inline-block;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  nav.top-nav>a:hover {
+    text-decoration: underline;
+  }
+  nav.top-nav>a.active {
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  div.content {
+    top: 5rem;
+    left: calc(50% - 12rem);
+    width: 24rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.container {
+    background-position: 0 0.75rem, 0.75rem 0, 0 calc(100% - 0.75rem), calc(100% - 0.75rem) 0, center calc(100% - 0.75rem), -1rem -1rem, center;
+    background-size: 10rem, 1.5rem, 10rem, 1.5rem, 50%, 8rem, auto;
+  }
+  h3.save {
+    text-transform: uppercase;
+    font-size: 1rem;
+    top: 4rem;
+  }
+  h1.title {
+    font-size: 2.5rem;
+    top: 6rem;
+  }
+  h3.invite {
+    font-size: 0.75rem;
+    top: 9rem;
+  }
+  h2.date {
+    font-size: 1rem;
+    top: 12.5rem;
+  }
+  h3.location {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    top: 14.25rem;
+  }
+  img.hands {
+    display: none;
+  }
+  a.venue {
+    top: 17rem;
+    font-size: 0.75rem;
+    left: calc(50% - 4rem);
+  }
+  nav.top-nav {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 100%;
+    text-align: right;
+    z-index: 1000;
+  }
+  nav.top-nav>a,nav.top-nav>a:hover,nav.top-nav>a:active {
+    text-decoration: none;
+    color: #e0b278;
+    display: inline-block;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    visibility: hidden;
+  }
+  nav.top-nav>a:hover {
+    text-decoration: underline;
+  }
+  nav.top-nav>a.active {
+    text-decoration: underline;
+  }
+  nav.top-nav>a.open {
+    display: inline-block;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    cursor: pointer;
+    visibility: visible;
+  }
+  div.content {
+    top: 4rem;
+    width: calc(100% - 3rem);
+  }
+}
